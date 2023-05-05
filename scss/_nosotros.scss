@@ -1,0 +1,21 @@
+.titulodenosotros{
+  
+    height: 0px;
+    margin-top: 50px;
+    margin-right: 250px;
+}
+
+.parrafodenosotros{
+    margin-top: 100px;
+    margin-right: 500px;
+    margin-left: 0px;
+    margin-bottom: 0;
+    color: blue;
+    font-size: 2.5vw;
+}
+@media (max-width: 768px) {
+    .parrafodenosotros {
+      font-size: 4vw; 
+    }
+  }
+  

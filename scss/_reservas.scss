@@ -1,0 +1,31 @@
+.imagenesproductos{
+    display: inline-block;
+    background-position: center;
+}
+
+.contenedordereservas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "header  header"
+        "titulodegaleria titulodegaleria"
+        " imagenesproductos1 imagenesproductos2"
+        " imagenesproductos3 imagenesproductos4"
+        "footer footer";
+}
+
+.imagenesproductos1{
+    grid-area: imagenesproductos1;
+}
+
+.imagenesproductos2{
+    grid-area: imagenesproductos2;
+}
+
+.imagenesproductos3{
+    grid-area: imagenesproductos3;
+}
+
+.imagenesproductos4{
+    grid-area: imagenesproductos4;
+}

@@ -1,0 +1,18 @@
+.titulodegaleria{
+    text-align: center;
+    margin-top: 0.1vw;
+
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 10%;
+    margin-bottom:10% ;
+}
+.titulodegaleria{
+    grid-area: titulodegaleria;
+}

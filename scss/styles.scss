@@ -1,0 +1,138 @@
+@import "contacto";
+@import "galeria";
+@import "nosotros";
+@import "reservas";
+
+
+
+body{
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+    font-family: 'Pacifico', cursive;
+    background-color:#f0ebeb;
+    background-size:cover;
+    cursor: url(../multimedia/flor_cursor.cur), default;
+}
+.petalos_de_fondo{
+    position: fixed;
+    top:0%;
+    left:0%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image:url(../multimedia/petalos_de_fondo.png);
+    background-position: 0 0;
+    background-repeat: repeat-x repeat-y;
+    background-size: 15%;
+   
+
+    
+}
+@keyframes petalos_de_fondo{
+    from {
+      background-position: 0 0; /* posición inicial del fondo */
+    }
+    to {
+      background-position: 0 100%; /* posición final del fondo */
+    }
+  }
+.petalos_de_fondo{
+    animation: petalos_de_fondo 10s infinite;
+    animation-timing-function:linear;
+    animation-fill-mode: both;
+    animation-delay: 2s;
+    animation-direction:normal;
+    transition: 5s;
+}
+  
+  
+
+header{
+    color:red;
+    grid-area: header;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+ul{
+    list-style-type: georgian;
+}
+
+.menu li{
+    display: inline;
+    padding-left: 0px;
+    font-size: 2vw;
+
+}
+
+@media (max-width:768px){.menu li{
+    font-size: 4vw;
+}
+
+
+}
+.menu{
+    display: inline;
+    padding-right: 20px;
+    
+} 
+
+nav{
+    text-align: right;
+
+}
+
+
+.encabezado{
+    display: inline;
+    text-align: right;
+     img{
+        width: 100%;
+        float: left;
+        }
+}
+
+.primerparrafo{
+    color: rgb(175, 15, 68);
+    margin-top: 50px;
+    margin-bottom: 0;
+    border: solid  5px rgb(126, 19, 78);
+    text-align: left;
+  
+  
+}
+
+.image-container{
+    background-image: url("../multimedia/kero_mostrando.png");
+    background-size: contain;
+    background-repeat:no-repeat;
+    min-height: 200px;
+}
+
+.image-container:hover{
+    background-image: url("../multimedia/Kero.png");
+    transition: 350ms;
+}
+
+@media (max-width: 768px) {.image-container
+    {
+        display: none;
+    }
+}
+
+.piedepagina{
+    display: flex;
+    text-align: right;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+}
+
+.PieDePagina{
+    margin-right: 10px;
+    grid-area: footer;
+}
+  
+
+
